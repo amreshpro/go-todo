@@ -12,7 +12,10 @@ func main() {
 	// initialize logger
 	logger.InitLogger()
 	config.MustLoad()
+	config.InitDB()
 
+
+    
 	// initialize router
 	todoRouter := router.TodoRouter()
 
